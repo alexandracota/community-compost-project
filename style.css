@@ -1,0 +1,31 @@
+.navbar-top {
+	padding: 20px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 24px;
+}
+
+.glyphicon {
+	position: relative;
+	float: right;
+	font: black;
+}
+
+.jumbotron {
+	height: 550px;
+	padding: 100px;
+	font-family: 'PT Sans Narrow', sans-serif;
+	background-color: white;
+}
+
+img {
+	width: 99%;
+}
+
+.btn {
+	background-color: black;
+}
+
+.logo {
+	height: 50px;
+	width: 75px;
+}
