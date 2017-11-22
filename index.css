@@ -5,15 +5,14 @@ body {
 /*Navbar*/
 
 .navbar-icon {
-	width: 150px;
-	height: 150px;
-	margin: 15px;
+	width: 200px;
+	height: 200px;
 }
 
-.navbar-nav {
-	list-style-type: none;
-	margin-top: 125px;
-}
+	.navbar-nav {
+		list-style-type: none;
+		margin-top: 175px;
+	}
 
 .navbar-collapse {
 	float: right;
@@ -62,6 +61,15 @@ body {
 	float: right;
 }
 
+.featured-gardens {
+	font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+.img-thumb {
+	width: 200px;
+	height: auto;
+}
 
 .btn {
 	background-color: black;

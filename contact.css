@@ -1,0 +1,45 @@
+body {
+	background-color: #F4F5E9;
+}
+
+/*Navbar*/
+
+.navbar-icon {
+	width: 200px;
+	height: 200px;
+	/*margin: 15px;*/
+}
+
+	.navbar-nav {
+		list-style-type: none;
+		margin-top: 175px;
+	}
+
+	.navbar-collapse {
+		float: right;
+	}
+
+	.nav-link {
+		margin: 20px;
+		font-family: 'PT Sans Narrow', sans-serif;
+		color: #000000;
+		font-size: 20px;
+	}
+
+.container {
+background-color: #ffffff;
+width: 100%;
+font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+
+	.facebook-window {
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	
+
