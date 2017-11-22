@@ -9,6 +9,8 @@ var PORT = process.env.PORT || 3000;
 //Instantiate express
 var app = express();
 
+require("./config/routes");
+
 //Designate view folder as static directory
 app.use(express.static(__dirname + "/view"));
 
