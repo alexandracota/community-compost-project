@@ -1,0 +1,25 @@
+{
+  "name": "community-compost-project",
+  "version": "1.0.0",
+  "description": "Community Compost Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandracota/community-compost-project.git"
+  },
+  "author": "Alex Cota",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandracota/community-compost-project/issues"
+  },
+  "homepage": "https://github.com/alexandracota/community-compost-project#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.4"
+  }
+}
