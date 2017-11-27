@@ -9,11 +9,21 @@ var Schema = mongoose.Schema;
 
 //Create a messageSchema with the schema object
 var messageSchema = new Schema({
-	_id: {
-		type: Schema.Types.ObjectId
+	name: {
+		type: String
+		// trim: true,
+		// required: "Please enter your full name"
 	},
-	date: String,
-	messageText: String
+	email: {
+		type: String
+		// trim: true,
+  //   	match: [/.+\@.+\..+/, "Please enter a valid e-mail address"]
+	},
+	messageText: {
+		type: String
+		// trim: true,
+		// required: "Please enter a message"
+	}
 });
 
 //Create Message model using the messageSchema

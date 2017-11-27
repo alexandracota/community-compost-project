@@ -2,8 +2,8 @@
 //Store them in a variable
 //push the variable as a JSON object to the server
 
-var messageController = require("../model/Message.js");
-var makeDate = require("../scripts/date");
+var Message = require("../model/Message.js");
+var makeDate = require("../view/date.js");
 
 module.exports = {
 	save: function(data, cb) {

@@ -9,7 +9,10 @@ var PORT = process.env.PORT || 3000;
 //Instantiate express
 var app = express();
 
-require("./config/routes");
+//Require routes
+// var routes = require("./config/routes");
+
+var messageController = require("./controller/message");
 
 //Designate view folder as static directory
 app.use(express.static(__dirname + "/view"));
@@ -30,6 +33,13 @@ mongoose.connect(db, function(error) {
 		console.log("Mongoose connection successful");
 	}
 });
+
+//Routes
+app.post("/api/message", function(req, res) {
+		messageController.save(req.body, function(data) {
+			res.json(data);
+		});
+	});
 
 //Connect on PORT 3000
 app.listen(PORT, function() {
