@@ -1,6 +1,3 @@
-//Connect the routes.js
-// var messageRoute = require("../config/routes");
-
 $(document).ready(function() {
 
 	$(document).on("click", ".submit", sendMessage);
@@ -16,13 +13,16 @@ $(document).ready(function() {
 
 		if (newMessageName) {
 			messageData = {
-				messageName: newMessageName,
-				messageEmail: newMessageEmail,
+				name: newMessageName,
+				email: newMessageEmail,
 				messageText: newMessageText
-			};
+			}
 			//Post the data to the server via the "/api/message" route
 			$.post("/api/message", messageData).then(function() {
-				console.log("message name posted");
+				alert("Thank you for your message!");
+				$("#name").val('');
+				$("#inputEmail").val('');
+				$("#textArea").val('');
 			});
 		} else {
 			console.log("error posting message");
